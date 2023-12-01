@@ -1,0 +1,16 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Dashboard</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <p">Selamat datang {{ nama }}</p>
+  <ion-item (click)="logout()">
+    <ion-icon slot="start" ios="exit-outline" md="exit-sharp"></ion-icon>
+    <ion-label>Logout</ion-label>
+  </ion-item>
+  <hr />
+</ion-content>
